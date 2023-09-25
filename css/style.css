@@ -4,17 +4,30 @@
 }
 body {
 	background: #f1fbff;
+  padding-bottom: 1000px;
+}
+.con img{
+  object-fit: cover;
+}
+.center-elements{
+  display: grid !important;
+  place-items: center !important;
 }
 .section-padding {
 	padding: 100px 0;
 }
 .carousel-item {
+  position: relative;
 	height: 100vh;
 	min-height: 300px;
 }
 .carousel-caption {
-	bottom: 220px;
+position: absolute !important;
+
+top: 50% !important;
+bottom: 50% !important;
 	z-index: 2;
+
 }
 .carousel-caption h5 {
 	font-size: 45px;
@@ -26,8 +39,10 @@ body {
 	width: 60%;
 	margin: auto;
 	font-size: 18px;
-	line-height: 1.9;
+	
  }
+
+
 
  .carousel-inner::before{
   content: "";
@@ -67,7 +82,90 @@ body {
   height: 100vh;
 }
 
-/*css responsive*/
+.envios {
+  display: flex;
+  background-color: black;
+  color: white;
+  position: fixed;
+  top:60px;
+  z-index: 100000;
+  left: 0;
+  right: 0;
+  justify-content: center;
+  align-items: center;
+  height: 37PX;
+  
+}
+
+.kettlebellideal {
+
+  height: 180px;
+  /* margin-top: 15px; */
+  display: flex;
+  font-family: 'Montserrat', sans-serif; 
+  border-bottom: solid 5px black;
+  font-size: 30px;
+  align-items: center;
+  gap: 100px;
+  
+  
+}
+
+.kbidealyboton {
+  display: flex;
+  align-items: center;
+  gap: 80px;
+  justify-content: center;
+}
+
+.btn1 {
+  padding: 10px 45px !important;
+}
+
+.fotokettlebellideal {
+
+height: 100%;
+width: 25%;
+}
+
+.fotokettlebellideal img {
+
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+ 
+  }
+
+.enviosycalificaciones{
+  margin-top: 20px;
+  border: 1px solid black;
+  padding: 100px 0;
+  width: 100vw;
+}
+
+  .enviosgratis{
+    display: flex;
+    align-items: center !important;
+    justify-content: space-around !important;
+    /*border: 1px solid yellow;*/
+  }
+
+  .l img{
+    width: 70px;
+  }
+  .l p{
+margin-top: 28px;
+  }
+
+  .l{
+    font-weight: bold;
+    text-align: center;
+    /* border: 1px solid brown; */
+  }
+
+
+
+/*css media queries*/
 
 @media only screen and (max-width: 767px){
   .navbar.nav{
@@ -87,6 +185,22 @@ body {
     line-height: 1.6;
     font-size: 12px;
   }
+  .kettlebellideal {
+    flex-direction: column;
+  }
+  .fotokettlebellideal{
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .blockquote {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  .btn {
+    padding: 8px 16px;
+  }
+
+
 }
 
 
