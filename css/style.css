@@ -4,7 +4,7 @@
 }
 body {
 	background: #f1fbff;
-  padding-bottom: 1000px;
+
 }
 .con img{
   object-fit: cover;
@@ -42,9 +42,7 @@ bottom: 50% !important;
 	
  }
 
-
-
- .carousel-inner::before{
+.carousel-inner::before{
   content: "";
   position: absolute;
   width: 100%;
@@ -138,7 +136,7 @@ width: 25%;
 
 .enviosycalificaciones{
   margin-top: 20px;
-  border: 1px solid black;
+  /*border: 1px solid black;*/
   padding: 100px 0;
   width: 100vw;
 }
@@ -163,7 +161,36 @@ margin-top: 28px;
     /* border: 1px solid brown; */
   }
 
+  .masvendido {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fed825;
+    padding: 6px;
+    
+  }
 
+ .masvendido h2 {
+  font-weight: 600;
+ }
+
+
+ .productoscompetitivos img {
+  width: 350px;
+}
+
+footer{
+  position: absolute;
+
+margin-top: 100px;
+left: 0;
+right: 0;
+
+ }
+
+ .r{
+  border: none !important;
+ }
 
 /*css media queries*/
 
