@@ -1,14 +1,17 @@
+/* variables */
 $color-noche: black;
 $color-nieve: white;
 $color-verdedinero: rgb(68, 234, 68);
 $color-amarilloking: #FED825;
+/* fin de las variables*/
 
-
-
+/*importaciones*/
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
 * {
 	font-family: 'Montserrat', sans-serif;
 }
+/* importaciones fin */
+
 body {
 	background: #f1fbff;
 
@@ -102,7 +105,6 @@ bottom: 50% !important;
   }
 
 .kettlebellideal {
-
   height: 195px;
   /* margin-top: 15px; */
   display: flex;
@@ -112,6 +114,17 @@ bottom: 50% !important;
   align-items: center;
   gap: 20px;
 }
+
+.fotokettlebellideal {
+  height: 100%;
+  width: 40%;
+  }
+
+.fotokettlebellideal img {
+    height: 100%;
+    width: 70%;
+    object-fit: cover;
+  }
 
 .kbidealyboton {
   display: flex;
@@ -123,17 +136,6 @@ bottom: 50% !important;
 .btn1 {
   padding: 10px 45px !important;
 }
-
-.fotokettlebellideal {
-height: 100%;
-width: 40%;
-}
-
-.fotokettlebellideal img {
-  height: 100%;
-  width: 70%;
-  object-fit: cover;
- }
 
 .enviosycalificaciones{
   margin-top: 20px;
@@ -176,13 +178,26 @@ margin-top: 28px;
   font-weight: 600;
  }
 
- .productoscompetitivos h4 {
-  color: $color-verdedinero;
+ .productoscompetitivos {
+  h4 {
+    color: $color-verdedinero;
+  }
 }
 
  .productoscompetitivos img {
   width: 350px;
 }
+
+
+footer{
+  position: absolute;
+  margin-top: 100px;
+  left: 0;
+  right: 0;
+
+ }
+
+/*comienzo ventas.html*/
 
 .productoscompetitivosdos {
   h4 {
@@ -215,15 +230,6 @@ margin-top: 28px;
 }
 
 
-
-footer{
-  position: absolute;
-  margin-top: 100px;
-  left: 0;
-  right: 0;
-
- }
-
  .r{
   border: none !important;
  }
@@ -238,20 +244,19 @@ footer{
   font-weight: 600;
  }
 
+ /* final ventas.html*/
+
  /* CSS kettlebells.html comienzo */
 
-$primary-color: #ffffff; // Set your primary color
-$secondary-color: #ffffff; // Set your secondary color
-
-// Mixin for centering elements
 @mixin center {
   display: flex;
   justify-content: center;
   align-items: center;
   background: linear-gradient(to right, #FFD700, #FFA500);
+  border-radius: 14px;
+  margin-bottom: 40px;
 }
 
-// Mixin for responsive text
 @mixin responsive-text {
   font-size: 20px;
 
@@ -269,13 +274,17 @@ $secondary-color: #ffffff; // Set your secondary color
 
   p {
     @include responsive-text;
+    background: linear-gradient(to right,#fdfc47,#24fe41);
+    padding: 10%;
+    border-radius: 10px;
   }
 
   img {
     width: 100%;
     height: 450px;
-    border: solid;
     border-radius: 5px;
+    margin-top: 40px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; // Agregar transiciones
   }
 }
 
@@ -283,46 +292,49 @@ $secondary-color: #ffffff; // Set your secondary color
 
 
 /* css entrenamientos.html comienzo*/
-.tituloseccion {
-  display: flex;
-  justify-content: center;
-  padding-top: 10%;
+@mixin responsive-image {
+  max-width: 100%;
+  height: 450px;
+  margin-top: 55px;
+  margin-bottom: 55px;
 }
 
-.swingsnatch,
-.pesomuertopushup {
-  display: flex;
-  justify-content: space-between;
+@mixin gradient-text {
+  background: linear-gradient(#fdfc47,#24fe41);
+  border-radius: 10px;
+  color: $color-noche;
 }
 
-
-.swingsnatch article,
-.pesomuertopushup article {
-  text-align: center;
-  flex: 1; 
- }
-
-
-.swingsnatch img,
-.pesomuertopushup img {
-  width: 50%; 
+main {
+  h2.tituloseccion, h3 {
+    @include gradient-text;
+  }
 }
 
 
-.swingsnatch h2,
-.pesomuertopushup h2 {
-  margin-top: 0; 
+.training {
+  .tituloseccion {
+    padding-top: 1%;
+    padding-bottom: 1%;
+    margin-bottom: 85px;
+    margin-top: 90px;
+  }
+
+  .row {
+    article {
+      h3 {
+        border: none;
+        padding: 5px;
+      }
+
+      img {
+        @include responsive-image;
+      }
+    }
+  }
 }
 
-.swingsnatch h3{
-  border: none;
-  padding: 5px;
-}
 
-.pesomuertopushup h3{
-  border: none;
-  padding: 5px;
-}
 /* css entrenamientos.html fin*/
 
 
@@ -387,9 +399,62 @@ $secondary-color: #ffffff; // Set your secondary color
   }
 }
 
-/* Apply the animation to the image within the specified div */
-.productoscompetitivos, .productoscompetitivosdos img {
+.productoscompetitivos img:hover, .productoscompetitivosdos img:hover, .competicion h2:hover {
   animation: pulse 1s 1s;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0.8;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.competicion img {
+  transition: all 0.4s ease-out;
+  opacity: 0.8;
+  transform: translateY(10px);
+}
+
+.competicion img:hover {
+  animation: fadeInUp 0.4s forwards;
+}
+
+
+@keyframes fadeInSlide {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.imagenesentrenamientos {
+  animation: fadeInSlide 0.5s forwards;
+}
+
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.imagenesentrenamientos:hover {
+  animation: rotate 0.5s;
 }
 
 
