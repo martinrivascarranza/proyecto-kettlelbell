@@ -8,7 +8,7 @@
 
 /* importaciones fin */
 body {
-  background: #f1fbff;
+  background: white;
 }
 
 .con img {
@@ -194,12 +194,18 @@ footer {
   color: rgb(68, 234, 68);
 }
 
-.kettlebellshierro, .kettlebellsmetal, .chalecos {
+.kettlebellshierro,
+.kettlebellsmetal,
+.chalecos {
   height: 10vh;
-  padding-top: 1%;
-  padding-bottom: 0%;
-  margin-bottom: 35px;
-  background: linear-gradient(to right, #FFD700, #FFA500);
+  padding-top: 0.1%;
+  padding-bottom: 0.1%;
+  margin-bottom: 55px;
+  background: linear-gradient(to right, #FED825, #FFA500);
+  margin-top: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .kettlebellshierro h3,
@@ -208,10 +214,9 @@ footer {
   margin: 0;
 }
 
-.kettlebellshierro {
+/*.kettlebellshierro {
   margin-top: 80px;
-}
-
+}*/
 .r {
   border: none !important;
 }
@@ -235,13 +240,13 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(to right, #FFD700, #FFA500);
+  background: linear-gradient(to right, #FED825, #FFA500);
   border-radius: 14px;
   margin-bottom: 40px;
 }
 .competicion p {
   font-size: 20px;
-  background: linear-gradient(to right, #fdfc47, #24fe41);
+  background: linear-gradient(to right, #fcfc7e, white);
   padding: 10%;
   border-radius: 10px;
 }
@@ -251,7 +256,7 @@ footer {
   }
 }
 .competicion img {
-  width: 100%;
+  width: 95%;
   height: 450px;
   border-radius: 5px;
   margin-top: 40px;
@@ -260,8 +265,9 @@ footer {
 
 /* css kettlebells.html fin*/
 /* css entrenamientos.html comienzo*/
-main h2.tituloseccion, main h3 {
-  background: linear-gradient(#fdfc47, #24fe41);
+main h2.tituloseccion,
+main h3 {
+  background: linear-gradient(#FED825, #FFA500);
   border-radius: 10px;
   color: black;
 }
@@ -284,12 +290,45 @@ main h2.tituloseccion, main h3 {
 }
 
 /* css entrenamientos.html fin*/
-/* css entrenamientos.html comienzo*/
 .containercontact {
   padding-top: 10%;
 }
 
-/* css entrenamientos.html fin*/
+/*contacto.html comienzo*/
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: white;
+}
+
+.containercontact {
+  margin-top: 25px;
+  margin-bottom: 40px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+.containercontact h2 {
+  color: black;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.containercontact .form-control {
+  border-radius: 5px;
+  border: 3px solid rgba(0, 0, 0, 0.2);
+}
+.containercontact .form-control:focus {
+  border-color: #FED825;
+  box-shadow: none;
+}
+.containercontact button.btn-warning {
+  background-color: #FED825;
+  border: none;
+}
+.containercontact button.btn-warning:hover {
+  background-color: #efc501;
+}
+
+/*contacto.html fin*/
 /*css media queries*/
 @media only screen and (max-width: 767px) {
   .navbar.nav {
@@ -338,7 +377,9 @@ main h2.tituloseccion, main h3 {
     transform: scale(1);
   }
 }
-.productoscompetitivos img:hover, .productoscompetitivosdos img:hover, .competicion h2:hover {
+.productoscompetitivos img:hover,
+.productoscompetitivosdos img:hover,
+.competicion h2:hover {
   animation: pulse 1s 1s;
 }
 

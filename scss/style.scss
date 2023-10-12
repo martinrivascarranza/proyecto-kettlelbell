@@ -3,56 +3,66 @@ $color-noche: black;
 $color-nieve: white;
 $color-verdedinero: rgb(68, 234, 68);
 $color-amarilloking: #FED825;
+$color-fondocontacto: rgba(180, 178, 178, 0.886);
 /* fin de las variables*/
 
 /*importaciones*/
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+
 * {
-	font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
+
 /* importaciones fin */
 
 body {
-	background: #f1fbff;
+  background: $color-nieve;
 
 }
-.con img{
+
+.con img {
   object-fit: cover;
 }
-.center-elements{
+
+.center-elements {
   display: grid !important;
   place-items: center !important;
 }
+
 .section-padding {
-	padding: 100px 0;
+  padding: 100px 0;
 }
+
 .carousel-item {
   position: relative;
-	height: 100vh;
-	min-height: 300px;
+  height: 100vh;
+  min-height: 300px;
 }
+
 .carousel-caption {
-position: absolute !important;
+  position: absolute !important;
 
-top: 50% !important;
-bottom: 50% !important;
-	z-index: 2;
+  top: 50% !important;
+  bottom: 50% !important;
+  z-index: 2;
 
 }
+
 .carousel-caption h5 {
-	font-size: 45px;
-	text-transform: uppercase;
-	letter-spacing: 2px;
-	margin-top: 25px;
+  font-size: 45px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-top: 25px;
 }
-.carousel-caption p {
-	width: 60%;
-	margin: auto;
-	font-size: 18px;
-	
- }
 
-.carousel-inner::before{
+.carousel-caption p {
+  width: 60%;
+  margin: auto;
+  font-size: 18px;
+
+}
+
+.carousel-inner::before {
   content: "";
   position: absolute;
   width: 100%;
@@ -60,9 +70,9 @@ bottom: 50% !important;
   top: 0;
   left: 0;
   background-color: rgba(0, 0, 0, 0.7);
- }
+}
 
- .navbar-nav {
+.navbar-nav {
 
   font-size: 15px;
   text-transform: uppercase;
@@ -77,9 +87,9 @@ bottom: 50% !important;
   letter-spacing: 2px;
 }
 
-.navbar-light .navbar-brand-focus, 
+.navbar-light .navbar-brand-focus,
 .navbar-light .navbar-brand:hover {
-  color:#000;
+  color: #000;
 }
 
 .navbar-light .navbar-nav .navbar-link {
@@ -102,13 +112,13 @@ bottom: 50% !important;
   justify-content: center;
   align-items: center;
   height: 37px;
-  }
+}
 
 .kettlebellideal {
   height: 195px;
   /* margin-top: 15px; */
   display: flex;
-  font-family: 'Montserrat', sans-serif; 
+  font-family: 'Montserrat', sans-serif;
   border-bottom: solid 3px black;
   font-size: 30px;
   align-items: center;
@@ -118,13 +128,13 @@ bottom: 50% !important;
 .fotokettlebellideal {
   height: 100%;
   width: 40%;
-  }
+}
 
 .fotokettlebellideal img {
-    height: 100%;
-    width: 70%;
-    object-fit: cover;
-  }
+  height: 100%;
+  width: 70%;
+  object-fit: cover;
+}
 
 .kbidealyboton {
   display: flex;
@@ -137,65 +147,64 @@ bottom: 50% !important;
   padding: 10px 45px !important;
 }
 
-.enviosycalificaciones{
+.enviosycalificaciones {
   margin-top: 20px;
   /*border: 1px solid black;*/
   padding: 100px 0;
   width: 100vw;
 }
 
-.enviosgratis{
+.enviosgratis {
   display: flex;
   align-items: center !important;
   justify-content: space-around !important;
   /*border: 1px solid yellow;*/
 }
 
-  .l img{
-    width: 70px;
-  }
-  .l p{
-margin-top: 28px;
-  }
+.l img {
+  width: 70px;
+}
 
-  .l{
-    font-weight: bold;
-    text-align: center;
-    /* border: 1px solid brown; */
-  }
+.l p {
+  margin-top: 28px;
+}
 
-  .masvendido {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: linear-gradient(to right, 
-    #f12711,#f5af19);
-    padding: 6px;
-    
-  }
+.l {
+  font-weight: bold;
+  text-align: center;
+  /* border: 1px solid brown; */
+}
 
- .masvendido h2 {
+.masvendido {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to right, #f12711, #f5af19);
+  padding: 6px;
+}
+
+.masvendido h2 {
   font-weight: 600;
- }
+}
 
- .productoscompetitivos {
+.productoscompetitivos {
   h4 {
     color: $color-verdedinero;
   }
 }
 
- .productoscompetitivos img {
+.productoscompetitivos img {
   width: 350px;
 }
 
 
-footer{
+footer {
   position: absolute;
   margin-top: 100px;
   left: 0;
   right: 0;
 
- }
+}
 
 /*comienzo ventas.html*/
 
@@ -207,14 +216,20 @@ footer{
 
 @mixin applyBackground {
   height: 10vh;
-  padding-top: 1%;
-  padding-bottom: 0%;
-  margin-bottom: 35px;
-  background: linear-gradient(to right, #FFD700, #FFA500);
- 
+  padding-top: 0.1%;
+  padding-bottom: 0.1%;
+  margin-bottom: 55px;
+  background: linear-gradient(to right, $color-amarilloking, #FFA500);
+  margin-top: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
 }
 
-.kettlebellshierro, .kettlebellsmetal, .chalecos {
+.kettlebellshierro,
+.kettlebellsmetal,
+.chalecos {
   @include applyBackground;
 }
 
@@ -222,37 +237,37 @@ footer{
 .kettlebellshierro h3,
 .kettlebellsmetal h3,
 .chalecos h3 {
-  margin: 0;  
+  margin: 0;
 }
 
-.kettlebellshierro {
+/*.kettlebellshierro {
   margin-top: 80px;
+}*/
+
+
+.r {
+  border: none !important;
 }
 
-
- .r{
-  border: none !important;
- }
-
- .productoscompetitivosdos img {
+.productoscompetitivosdos img {
   width: 350px;
- }
+}
 
- .ventaspk {
+.ventaspk {
   margin-top: 100px;
   margin-bottom: 50px;
   font-weight: 600;
- }
+}
 
- /* final ventas.html*/
+/* final ventas.html*/
 
- /* CSS kettlebells.html comienzo */
+/* CSS kettlebells.html comienzo */
 
 @mixin center {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(to right, #FFD700, #FFA500);
+  background: linear-gradient(to right, $color-amarilloking, #FFA500);
   border-radius: 14px;
   margin-bottom: 40px;
 }
@@ -274,17 +289,17 @@ footer{
 
   p {
     @include responsive-text;
-    background: linear-gradient(to right,#fdfc47,#24fe41);
+    background: linear-gradient(to right, #fcfc7e, $color-nieve);
     padding: 10%;
     border-radius: 10px;
   }
 
   img {
-    width: 100%;
+    width: 95%;
     height: 450px;
     border-radius: 5px;
     margin-top: 40px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease; // Agregar transiciones
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
 }
 
@@ -300,13 +315,15 @@ footer{
 }
 
 @mixin gradient-text {
-  background: linear-gradient(#fdfc47,#24fe41);
+  background: linear-gradient($color-amarilloking, #FFA500);
   border-radius: 10px;
   color: $color-noche;
 }
 
 main {
-  h2.tituloseccion, h3 {
+
+  h2.tituloseccion,
+  h3 {
     @include gradient-text;
   }
 }
@@ -333,51 +350,101 @@ main {
     }
   }
 }
-
-
 /* css entrenamientos.html fin*/
 
 
-/* css entrenamientos.html comienzo*/
+
 .containercontact {
   padding-top: 10%;
 }
-/* css entrenamientos.html fin*/
+
+
+/*contacto.html comienzo*/
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  ;
+  background-color: $color-nieve;
+}
+
+.containercontact {
+  margin-top: 25px;
+  margin-bottom: 40px;
+  background-color: $color-nieve;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+
+  h2 {
+    color: $color-noche;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .form-control {
+    border-radius: 5px;
+    border: 3px solid rgba(0, 0, 0, 0.2);
+
+    &:focus {
+      border-color: $color-amarilloking;
+      box-shadow: none;
+    }
+  }
+
+  button.btn-warning {
+    background-color: $color-amarilloking;
+    border: none;
+
+    &:hover {
+      background-color: darken($color-amarilloking, 10%);
+    }
+  }
+}
+
+/*contacto.html fin*/
 
 
 /*css media queries*/
 
-@media only screen and (max-width: 767px){
-  .navbar.nav{
-    text-align:center;
+@media only screen and (max-width: 767px) {
+  .navbar.nav {
+    text-align: center;
   }
-  .carousel-caption h5{
+
+  .carousel-caption h5 {
     bottom: 125px;
   }
-  .carousel-caption h5{
+
+  .carousel-caption h5 {
     font-size: 17px;
   }
-  .carousel-caption a{
+
+  .carousel-caption a {
     padding: 10px 15px;
   }
-  .carousel-caption p{
+
+  .carousel-caption p {
     width: 100%;
     line-height: 1.6;
     font-size: 12px;
   }
+
   .kettlebellideal {
     flex-direction: column;
   }
-  .fotokettlebellideal{
+
+  .fotokettlebellideal {
     max-width: 80%;
   }
+
   .kbidealyboton {
     margin-top: 10px;
   }
+
   .blockquote {
     font-size: 18px;
     margin-bottom: 10px;
   }
+
   .btn {
     padding: 8px 16px;
   }
@@ -391,15 +458,19 @@ main {
   0% {
     transform: scale(1);
   }
+
   50% {
     transform: scale(1.1);
   }
+
   100% {
     transform: scale(1);
   }
 }
 
-.productoscompetitivos img:hover, .productoscompetitivosdos img:hover, .competicion h2:hover {
+.productoscompetitivos img:hover,
+.productoscompetitivosdos img:hover,
+.competicion h2:hover {
   animation: pulse 1s 1s;
 }
 
@@ -408,6 +479,7 @@ main {
     opacity: 0.8;
     transform: translateY(10px);
   }
+
   100% {
     opacity: 1;
     transform: translateY(0);
@@ -430,6 +502,7 @@ main {
     opacity: 0;
     transform: translateY(30px);
   }
+
   100% {
     opacity: 1;
     transform: translateY(0);
@@ -445,9 +518,11 @@ main {
   0% {
     transform: rotate(0deg);
   }
+
   50% {
     transform: rotate(5deg);
   }
+
   100% {
     transform: rotate(0deg);
   }
@@ -460,13 +535,8 @@ main {
 
 
 
-.navbar{
+.navbar {
   z-index: 10000000000 !important;
 }
 
 /*# sourceMappingURL=style.css.map */
-
-
-
-
-
