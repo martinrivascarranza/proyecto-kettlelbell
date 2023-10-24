@@ -16,7 +16,8 @@
 }
 .productoscompetitivos img:hover,
 .productoscompetitivosdos img:hover,
-.competicion h2:hover {
+.competicion h2:hover,
+.text-center h3:hover {
   animation: pulse 1s 1s;
 }
 
@@ -40,20 +41,21 @@
   animation: fadeInUp 0.4s forwards;
 }
 
-@keyframes fadeInSlide {
+/*@keyframes fadeInSlide {
   0% {
     opacity: 0;
     transform: translateY(30px);
   }
+
   100% {
     opacity: 1;
     transform: translateY(0);
   }
 }
+
 .imagenesentrenamientos {
   animation: fadeInSlide 0.5s forwards;
-}
-
+}*/
 @keyframes rotate {
   0% {
     transform: rotate(0deg);
@@ -197,6 +199,10 @@
   width: 350px;
 }
 
+.kettlebellshierro {
+  margin-top: 80px;
+}
+
 .ventaspk {
   margin-top: 100px;
   margin-bottom: 50px;
@@ -214,7 +220,11 @@
   align-items: center;
   background: linear-gradient(to right, #FED825, #FFA500);
   border-radius: 14px;
+  margin-top: 8px;
   margin-bottom: 40px;
+  font-size: 28px;
+  font-weight: 550;
+  padding: 10px;
 }
 .competicion p {
   font-size: 20px;
@@ -268,13 +278,20 @@ main h3 {
   background: linear-gradient(#FED825, #FFA500);
   border-radius: 10px;
   color: black;
+  font-size: 28px;
+  font-weight: 490;
+}
+
+.training {
+  margin-top: 80px;
 }
 
 .training .tituloseccion {
-  padding-top: 2%;
-  padding-bottom: 1%;
+  padding: 10px;
   margin-bottom: 85px;
   margin-top: 100px;
+  font-size: 28px;
+  font-weight: 550;
 }
 .training .row article h3 {
   border: none;
@@ -285,6 +302,7 @@ main h3 {
   height: 450px;
   margin-top: 55px;
   margin-bottom: 55px;
+  border-radius: 5px;
 }
 
 /* css entrenamientos.html fin*/
@@ -299,7 +317,10 @@ body {
   margin-bottom: 40px;
   background-color: white;
   border-radius: 5px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.1);
+  padding-top: 10%;
+  border: 2px solid red;
+  border: none;
 }
 .containercontact h2 {
   color: black;
@@ -307,7 +328,7 @@ body {
   margin-bottom: 20px;
 }
 .containercontact .form-control {
-  border-radius: 5px;
+  border-radius: 10px;
   border: 3px solid rgba(0, 0, 0, 0.2);
 }
 .containercontact .form-control:focus {
@@ -320,10 +341,6 @@ body {
 }
 .containercontact button.btn-warning:hover {
   background-color: #efc501;
-}
-
-.containercontact {
-  padding-top: 10%;
 }
 
 /*contacto.html fin*/

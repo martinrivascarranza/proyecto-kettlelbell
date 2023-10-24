@@ -11,7 +11,10 @@ body {
   margin-bottom: 40px;
   background-color: $color-nieve;
   border-radius: 5px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.1);
+  padding-top: 10%;
+  border: 2px solid red;
+
 
   h2 {
     color: $color-noche;
@@ -20,7 +23,7 @@ body {
   }
 
   .form-control {
-    border-radius: 5px;
+    border-radius: 10px;
     border: 3px solid rgba(0, 0, 0, 0.2);
 
     &:focus {
@@ -37,11 +40,11 @@ body {
       background-color: darken($color-amarilloking, 10%);
     }
   }
+
+  border: none;
 }
 
-.containercontact {
-  padding-top: 10%;
-}
+
 
 /*contacto.html fin*/
 

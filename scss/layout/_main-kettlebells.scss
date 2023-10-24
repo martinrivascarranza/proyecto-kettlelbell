@@ -6,7 +6,11 @@
   align-items: center;
   background: linear-gradient(to right, $color-amarilloking, #FFA500);
   border-radius: 14px;
+  margin-top: 8px;
   margin-bottom: 40px;
+  font-size: 28px;
+  font-weight: 550;
+  padding: 10px;
 }
 
 @mixin responsive-text {

@@ -4,12 +4,15 @@
   height: 450px;
   margin-top: 55px;
   margin-bottom: 55px;
+  border-radius: 5px;;
 }
 
 @mixin gradient-text {
   background: linear-gradient($color-amarilloking, #FFA500);
   border-radius: 10px;
   color: $color-noche;
+  font-size: 28px;
+  font-weight: 490;
 }
 
 main {
@@ -20,13 +23,17 @@ main {
   }
 }
 
+.training {
+  margin-top: 80px;
+}
 
 .training {
   .tituloseccion {
-    padding-top: 2%;
-    padding-bottom: 1%;
+    padding: 10px;;
     margin-bottom: 85px;
     margin-top: 100px;
+    font-size: 28px;
+    font-weight: 550;
   }
 
   .row {

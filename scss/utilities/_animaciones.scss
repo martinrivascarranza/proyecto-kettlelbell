@@ -15,7 +15,8 @@
 
 .productoscompetitivos img:hover,
 .productoscompetitivosdos img:hover,
-.competicion h2:hover {
+.competicion h2:hover,
+.text-center h3:hover {
   animation: pulse 1s 1s;
 }
 
@@ -42,7 +43,8 @@
 }
 
 
-@keyframes fadeInSlide {
+
+/*@keyframes fadeInSlide {
   0% {
     opacity: 0;
     transform: translateY(30px);
@@ -56,7 +58,7 @@
 
 .imagenesentrenamientos {
   animation: fadeInSlide 0.5s forwards;
-}
+}*/
 
 @keyframes rotate {
   0% {
@@ -75,4 +77,5 @@
 .imagenesentrenamientos:hover {
   animation: rotate 0.5s;
 }
+
 /*animaciones fin*/
