@@ -1,0 +1,45 @@
+/* css entrenamientos.html comienzo*/
+@mixin responsive-image {
+  max-width: 100%;
+  height: 450px;
+  margin-top: 55px;
+  margin-bottom: 55px;
+}
+
+@mixin gradient-text {
+  background: linear-gradient($color-amarilloking, #FFA500);
+  border-radius: 10px;
+  color: $color-noche;
+}
+
+main {
+
+  h2.tituloseccion,
+  h3 {
+    @include gradient-text;
+  }
+}
+
+
+.training {
+  .tituloseccion {
+    padding-top: 2%;
+    padding-bottom: 1%;
+    margin-bottom: 85px;
+    margin-top: 100px;
+  }
+
+  .row {
+    article {
+      h3 {
+        border: none;
+        padding: 5px;
+      }
+
+      img {
+        @include responsive-image;
+      }
+    }
+  }
+}
+/* css entrenamientos.html fin*/

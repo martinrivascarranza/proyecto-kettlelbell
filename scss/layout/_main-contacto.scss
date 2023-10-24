@@ -1,0 +1,48 @@
+/*contacto.html comienzo*/
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  ;
+  background-color: $color-nieve;
+}
+
+.containercontact {
+  margin-top: 25px;
+  margin-bottom: 40px;
+  background-color: $color-nieve;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+
+  h2 {
+    color: $color-noche;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .form-control {
+    border-radius: 5px;
+    border: 3px solid rgba(0, 0, 0, 0.2);
+
+    &:focus {
+      border-color: $color-amarilloking;
+      box-shadow: none;
+    }
+  }
+
+  button.btn-warning {
+    background-color: $color-amarilloking;
+    border: none;
+
+    &:hover {
+      background-color: darken($color-amarilloking, 10%);
+    }
+  }
+}
+
+.containercontact {
+  padding-top: 10%;
+}
+
+/*contacto.html fin*/
+
+

@@ -1,0 +1,46 @@
+/*css media queries*/
+@media only screen and (max-width: 767px) {
+  .navbar.nav {
+    text-align: center;
+  }
+
+  .carousel-caption h5 {
+    bottom: 125px;
+  }
+
+  .carousel-caption h5 {
+    font-size: 17px;
+  }
+
+  .carousel-caption a {
+    padding: 10px 15px;
+  }
+
+  .carousel-caption p {
+    width: 100%;
+    line-height: 1.6;
+    font-size: 12px;
+  }
+
+  .kettlebellideal {
+    flex-direction: column;
+  }
+
+  .fotokettlebellideal {
+    max-width: 80%;
+  }
+
+  .kbidealyboton {
+    margin-top: 10px;
+  }
+
+  .blockquote {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  .btn {
+    padding: 8px 16px;
+  }
+}
+/*final media queries*/

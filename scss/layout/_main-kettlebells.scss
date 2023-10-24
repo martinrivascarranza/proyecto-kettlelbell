@@ -1,0 +1,88 @@
+/* CSS kettlebells.html comienzo */
+
+@mixin center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right, $color-amarilloking, #FFA500);
+  border-radius: 14px;
+  margin-bottom: 40px;
+}
+
+@mixin responsive-text {
+  font-size: 20px;
+
+  @media (max-width: 767px) {
+    font-size: 16px;
+  }
+}
+
+.competicion {
+  padding-top: 12%;
+
+  h2 {
+    @include center;
+  }
+
+  p {
+    @include responsive-text;
+    background: linear-gradient(to right, #fcfc7e, $color-nieve);
+    padding: 10%;
+    border-radius: 10px;
+  }
+
+  img {
+    width: 95%;
+    height: 450px;
+    border-radius: 5px;
+    margin-top: 40px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+}
+/* css kettlebells.html fin*/
+
+
+/* css entrenamientos.html comienzo*/
+@mixin responsive-image {
+  max-width: 100%;
+  height: 450px;
+  margin-top: 55px;
+  margin-bottom: 55px;
+}
+
+@mixin gradient-text {
+  background: linear-gradient($color-amarilloking, #FFA500);
+  border-radius: 10px;
+  color: $color-noche;
+}
+
+main {
+
+  h2.tituloseccion,
+  h3 {
+    @include gradient-text;
+  }
+}
+
+.training {
+  .tituloseccion {
+    padding-top: 1%;
+    padding-bottom: 1%;
+    margin-bottom: 85px;
+    margin-top: 90px;
+  }
+
+  .row {
+    article {
+      h3 {
+        border: none;
+        padding: 5px;
+      }
+
+      img {
+        @include responsive-image;
+      }
+    }
+  }
+}
+/* css entrenamientos.html fin*/

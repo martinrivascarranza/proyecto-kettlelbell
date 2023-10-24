@@ -1,371 +1,8 @@
+@charset "UTF-8";
 /* variables */
 /* fin de las variables*/
-/*importaciones*/
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap");
-* {
-  font-family: "Montserrat", sans-serif;
-}
-
-/* importaciones fin */
-body {
-  background: white;
-}
-
-.con img {
-  object-fit: cover;
-}
-
-.center-elements {
-  display: grid !important;
-  place-items: center !important;
-}
-
-.section-padding {
-  padding: 100px 0;
-}
-
-.carousel-item {
-  position: relative;
-  height: 100vh;
-  min-height: 300px;
-}
-
-.carousel-caption {
-  position: absolute !important;
-  top: 50% !important;
-  bottom: 50% !important;
-  z-index: 2;
-}
-
-.carousel-caption h5 {
-  font-size: 45px;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  margin-top: 25px;
-}
-
-.carousel-caption p {
-  width: 60%;
-  margin: auto;
-  font-size: 18px;
-}
-
-.carousel-inner::before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  background-color: rgba(0, 0, 0, 0.7);
-}
-
-.navbar-nav {
-  font-size: 15px;
-  text-transform: uppercase;
-  font-weight: 500;
-}
-
-.navbar-light .navbar-brand {
-  color: #000;
-  font-size: 25px;
-  text-transform: uppercase;
-  font-weight: 700;
-  letter-spacing: 2px;
-}
-
-.navbar-light .navbar-brand-focus,
-.navbar-light .navbar-brand:hover {
-  color: #000;
-}
-
-.navbar-light .navbar-nav .navbar-link {
-  color: #000;
-}
-
-.w-100 {
-  height: 100vh;
-}
-
-.envios {
-  display: flex;
-  background-color: black;
-  color: white;
-  /*position: fixed;*/
-  top: 113px;
-  z-index: 100000;
-  left: 0;
-  right: 0;
-  justify-content: center;
-  align-items: center;
-  height: 37px;
-}
-
-.kettlebellideal {
-  height: 195px;
-  /* margin-top: 15px; */
-  display: flex;
-  font-family: "Montserrat", sans-serif;
-  border-bottom: solid 3px black;
-  font-size: 30px;
-  align-items: center;
-  gap: 20px;
-}
-
-.fotokettlebellideal {
-  height: 100%;
-  width: 40%;
-}
-
-.fotokettlebellideal img {
-  height: 100%;
-  width: 70%;
-  object-fit: cover;
-}
-
-.kbidealyboton {
-  display: flex;
-  align-items: center;
-  gap: 80px;
-  justify-content: center;
-}
-
-.btn1 {
-  padding: 10px 45px !important;
-}
-
-.enviosycalificaciones {
-  margin-top: 20px;
-  /*border: 1px solid black;*/
-  padding: 100px 0;
-  width: 100vw;
-}
-
-.enviosgratis {
-  display: flex;
-  align-items: center !important;
-  justify-content: space-around !important;
-  /*border: 1px solid yellow;*/
-}
-
-.l img {
-  width: 70px;
-}
-
-.l p {
-  margin-top: 28px;
-}
-
-.l {
-  font-weight: bold;
-  text-align: center;
-  /* border: 1px solid brown; */
-}
-
-.masvendido {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: linear-gradient(to right, #f12711, #f5af19);
-  padding: 6px;
-}
-
-.masvendido h2 {
-  font-weight: 600;
-}
-
-.productoscompetitivos h4 {
-  color: rgb(68, 234, 68);
-}
-
-.productoscompetitivos img {
-  width: 350px;
-}
-
-footer {
-  position: absolute;
-  margin-top: 100px;
-  left: 0;
-  right: 0;
-}
-
-/*comienzo ventas.html*/
-.productoscompetitivosdos h4 {
-  color: rgb(68, 234, 68);
-}
-
-.kettlebellshierro,
-.kettlebellsmetal,
-.chalecos {
-  height: 10vh;
-  padding-top: 0.1%;
-  padding-bottom: 0.1%;
-  margin-bottom: 55px;
-  background: linear-gradient(to right, #FED825, #FFA500);
-  margin-top: 60px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.kettlebellshierro h3,
-.kettlebellsmetal h3,
-.chalecos h3 {
-  margin: 0;
-}
-
-/*.kettlebellshierro {
-  margin-top: 80px;
-}*/
-.r {
-  border: none !important;
-}
-
-.productoscompetitivosdos img {
-  width: 350px;
-}
-
-.ventaspk {
-  margin-top: 100px;
-  margin-bottom: 50px;
-  font-weight: 600;
-}
-
-/* final ventas.html*/
-/* CSS kettlebells.html comienzo */
-.competicion {
-  padding-top: 8%;
-}
-.competicion h2 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: linear-gradient(to right, #FED825, #FFA500);
-  border-radius: 14px;
-  margin-bottom: 40px;
-}
-.competicion p {
-  font-size: 20px;
-  background: linear-gradient(to right, #fcfc7e, white);
-  padding: 10%;
-  border-radius: 10px;
-}
-@media (max-width: 767px) {
-  .competicion p {
-    font-size: 16px;
-  }
-}
-.competicion img {
-  width: 95%;
-  height: 450px;
-  border-radius: 5px;
-  margin-top: 40px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-/* css kettlebells.html fin*/
-/* css entrenamientos.html comienzo*/
-main h2.tituloseccion,
-main h3 {
-  background: linear-gradient(#FED825, #FFA500);
-  border-radius: 10px;
-  color: black;
-}
-
-.training .tituloseccion {
-  padding-top: 1%;
-  padding-bottom: 1%;
-  margin-bottom: 85px;
-  margin-top: 90px;
-}
-.training .row article h3 {
-  border: none;
-  padding: 5px;
-}
-.training .row article img {
-  max-width: 100%;
-  height: 450px;
-  margin-top: 55px;
-  margin-bottom: 55px;
-}
-
-/* css entrenamientos.html fin*/
-.containercontact {
-  padding-top: 10%;
-}
-
-/*contacto.html comienzo*/
-body {
-  font-family: "Montserrat", sans-serif;
-  background-color: white;
-}
-
-.containercontact {
-  margin-top: 25px;
-  margin-bottom: 40px;
-  background-color: white;
-  border-radius: 5px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-}
-.containercontact h2 {
-  color: black;
-  text-align: center;
-  margin-bottom: 20px;
-}
-.containercontact .form-control {
-  border-radius: 5px;
-  border: 3px solid rgba(0, 0, 0, 0.2);
-}
-.containercontact .form-control:focus {
-  border-color: #FED825;
-  box-shadow: none;
-}
-.containercontact button.btn-warning {
-  background-color: #FED825;
-  border: none;
-}
-.containercontact button.btn-warning:hover {
-  background-color: #efc501;
-}
-
-/*contacto.html fin*/
-/*css media queries*/
-@media only screen and (max-width: 767px) {
-  .navbar.nav {
-    text-align: center;
-  }
-  .carousel-caption h5 {
-    bottom: 125px;
-  }
-  .carousel-caption h5 {
-    font-size: 17px;
-  }
-  .carousel-caption a {
-    padding: 10px 15px;
-  }
-  .carousel-caption p {
-    width: 100%;
-    line-height: 1.6;
-    font-size: 12px;
-  }
-  .kettlebellideal {
-    flex-direction: column;
-  }
-  .fotokettlebellideal {
-    max-width: 80%;
-  }
-  .kbidealyboton {
-    margin-top: 10px;
-  }
-  .blockquote {
-    font-size: 18px;
-    margin-bottom: 10px;
-  }
-  .btn {
-    padding: 8px 16px;
-  }
-}
 /* animaciones*/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap");
 @keyframes pulse {
   0% {
     transform: scale(1);
@@ -432,10 +69,404 @@ body {
   animation: rotate 0.5s;
 }
 
-.navbar {
-  z-index: 10000000000 !important;
+/*animaciones fin*/
+/*index.html comienzo*/
+/* kettlbell ideal*/
+.kettlebellideal {
+  height: 195px;
+  /* margin-top: 15px; */
+  display: flex;
+  font-family: "Montserrat", sans-serif;
+  border-bottom: solid 3px black;
+  font-size: 30px;
+  align-items: center;
+  gap: 20px;
 }
 
+.fotokettlebellideal {
+  height: 100%;
+  width: 40%;
+}
+
+.fotokettlebellideal img {
+  height: 100%;
+  width: 70%;
+  object-fit: cover;
+}
+
+.kbidealyboton {
+  display: flex;
+  align-items: center;
+  gap: 80px;
+  justify-content: center;
+}
+
+.btn1 {
+  padding: 10px 45px !important;
+}
+
+/*kettlebell ideal fin */
+/*comienzos envios y calificaciones */
+.enviosycalificaciones {
+  margin-top: 20px;
+  /*border: 1px solid black;*/
+  padding: 100px 0;
+  width: 100vw;
+}
+
+.enviosgratis {
+  display: flex;
+  align-items: center !important;
+  justify-content: space-around !important;
+  /*border: 1px solid yellow;*/
+}
+
+.l img {
+  width: 70px;
+}
+
+.l p {
+  margin-top: 28px;
+}
+
+.l {
+  font-weight: bold;
+  text-align: center;
+  /* border: 1px solid brown; */
+}
+
+/*fin envios y calificaciones */
+/*más vendido*/
+.masvendido {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to right, #f12711, #f5af19);
+  padding: 6px;
+}
+
+.masvendido h2 {
+  font-weight: 600;
+}
+
+/* fin más vendido*/
+/*contenedor imagenes más vendidos*/
+.productoscompetitivos h4 {
+  color: #018749;
+}
+
+.productoscompetitivos img {
+  width: 350px;
+}
+
+/*contenedor imagenes más vendidos fin*/
+/*index.html fin*/
+/*comienzo ventas.html*/
+.productoscompetitivosdos h4 {
+  color: #018749;
+}
+
+.kettlebellshierro,
+.kettlebellsmetal,
+.chalecos {
+  height: 10vh;
+  padding-top: 0.1%;
+  padding-bottom: 0.1%;
+  margin-bottom: 55px;
+  background: linear-gradient(to right, #FED825, #FFA500);
+  margin-top: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.kettlebellshierro h3,
+.kettlebellsmetal h3,
+.chalecos h3 {
+  margin: 0;
+}
+
+/*.kettlebellshierro {
+  margin-top: 80px;
+}*/
+.r {
+  border: none !important;
+}
+
+.productoscompetitivosdos img {
+  width: 350px;
+}
+
+.ventaspk {
+  margin-top: 100px;
+  margin-bottom: 50px;
+  font-weight: 600;
+}
+
+/* final ventas.html*/
+/* CSS kettlebells.html comienzo */
+.competicion {
+  padding-top: 12%;
+}
+.competicion h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right, #FED825, #FFA500);
+  border-radius: 14px;
+  margin-bottom: 40px;
+}
+.competicion p {
+  font-size: 20px;
+  background: linear-gradient(to right, #fcfc7e, white);
+  padding: 10%;
+  border-radius: 10px;
+}
+@media (max-width: 767px) {
+  .competicion p {
+    font-size: 16px;
+  }
+}
+.competicion img {
+  width: 95%;
+  height: 450px;
+  border-radius: 5px;
+  margin-top: 40px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* css kettlebells.html fin*/
+/* css entrenamientos.html comienzo*/
+main h2.tituloseccion,
+main h3 {
+  background: linear-gradient(#FED825, #FFA500);
+  border-radius: 10px;
+  color: black;
+}
+
+.training .tituloseccion {
+  padding-top: 1%;
+  padding-bottom: 1%;
+  margin-bottom: 85px;
+  margin-top: 90px;
+}
+.training .row article h3 {
+  border: none;
+  padding: 5px;
+}
+.training .row article img {
+  max-width: 100%;
+  height: 450px;
+  margin-top: 55px;
+  margin-bottom: 55px;
+}
+
+/* css entrenamientos.html fin*/
+/* css entrenamientos.html comienzo*/
+main h2.tituloseccion,
+main h3 {
+  background: linear-gradient(#FED825, #FFA500);
+  border-radius: 10px;
+  color: black;
+}
+
+.training .tituloseccion {
+  padding-top: 2%;
+  padding-bottom: 1%;
+  margin-bottom: 85px;
+  margin-top: 100px;
+}
+.training .row article h3 {
+  border: none;
+  padding: 5px;
+}
+.training .row article img {
+  max-width: 100%;
+  height: 450px;
+  margin-top: 55px;
+  margin-bottom: 55px;
+}
+
+/* css entrenamientos.html fin*/
+/*contacto.html comienzo*/
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: white;
+}
+
+.containercontact {
+  margin-top: 25px;
+  margin-bottom: 40px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+.containercontact h2 {
+  color: black;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.containercontact .form-control {
+  border-radius: 5px;
+  border: 3px solid rgba(0, 0, 0, 0.2);
+}
+.containercontact .form-control:focus {
+  border-color: #FED825;
+  box-shadow: none;
+}
+.containercontact button.btn-warning {
+  background-color: #FED825;
+  border: none;
+}
+.containercontact button.btn-warning:hover {
+  background-color: #efc501;
+}
+
+.containercontact {
+  padding-top: 10%;
+}
+
+/*contacto.html fin*/
+/*footer comienzo*/
+footer {
+  position: absolute;
+  margin-top: 100px;
+  left: 0;
+  right: 0;
+}
+
+/*footer fin*/
+/*css media queries*/
+@media only screen and (max-width: 767px) {
+  .navbar.nav {
+    text-align: center;
+  }
+  .carousel-caption h5 {
+    bottom: 125px;
+  }
+  .carousel-caption h5 {
+    font-size: 17px;
+  }
+  .carousel-caption a {
+    padding: 10px 15px;
+  }
+  .carousel-caption p {
+    width: 100%;
+    line-height: 1.6;
+    font-size: 12px;
+  }
+  .kettlebellideal {
+    flex-direction: column;
+  }
+  .fotokettlebellideal {
+    max-width: 80%;
+  }
+  .kbidealyboton {
+    margin-top: 10px;
+  }
+  .blockquote {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  .btn {
+    padding: 8px 16px;
+  }
+}
+/*final media queries*/
+/*el carousel solo fue utilizado en el index.html*/
+/*comienzo carousel*/
+.con img {
+  object-fit: cover;
+}
+
+.w-100 {
+  height: 100vh;
+}
+
+.center-elements {
+  display: grid !important;
+  place-items: center !important;
+}
+
+.section-padding {
+  padding: 100px 0;
+}
+
+.carousel-item {
+  position: relative;
+  height: 100vh;
+  min-height: 300px;
+}
+
+.carousel-caption {
+  position: absolute !important;
+  top: 50% !important;
+  bottom: 50% !important;
+  z-index: 2;
+}
+
+.carousel-caption h5 {
+  font-size: 45px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-top: 25px;
+}
+
+.carousel-caption p {
+  width: 60%;
+  margin: auto;
+  font-size: 18px;
+}
+
+.carousel-inner::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* final carousel*/
+/*fonts*/
+* {
+  font-family: "Montserrat", sans-serif;
+}
+
+/* fonts fin */
+body {
+  background: white;
+}
+
+/* barra de navegación*/
+.navbar-nav {
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.navbar-light .navbar-brand {
+  color: #000;
+  font-size: 25px;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.navbar-light .navbar-brand-focus,
+.navbar-light .navbar-brand:hover {
+  color: #000;
+}
+
+.navbar-light .navbar-nav .navbar-link {
+  color: #000;
+}
+
+/*fin barra de navegación*/
+/*navbar {
+  z-index: 10000000000 !important;
+}*/
 
 
 /*# sourceMappingURL=style.css.map */

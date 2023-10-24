@@ -1,0 +1,51 @@
+/*comienzo ventas.html*/
+.productoscompetitivosdos {
+  h4 {
+    color: $color-verdedinero;
+  }
+}
+
+@mixin applyBackground {
+  height: 10vh;
+  padding-top: 0.1%;
+  padding-bottom: 0.1%;
+  margin-bottom: 55px;
+  background: linear-gradient(to right, $color-amarilloking, #FFA500);
+  margin-top: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.kettlebellshierro,
+.kettlebellsmetal,
+.chalecos {
+  @include applyBackground;
+}
+
+.kettlebellshierro h3,
+.kettlebellsmetal h3,
+.chalecos h3 {
+  margin: 0;
+}
+
+/*.kettlebellshierro {
+  margin-top: 80px;
+}*/
+
+
+.r {
+  border: none !important;
+}
+
+.productoscompetitivosdos img {
+  width: 350px;
+}
+
+.ventaspk {
+  margin-top: 100px;
+  margin-bottom: 50px;
+  font-weight: 600;
+}
+/* final ventas.html*/
