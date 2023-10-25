@@ -210,7 +210,7 @@
 }
 
 /* final ventas.html*/
-/* CSS kettlebells.html comienzo */
+/* kettlebells.html comienzo*/
 .competicion {
   padding-top: 12%;
 }
@@ -244,35 +244,17 @@
   margin-top: 40px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-
-/* css kettlebells.html fin*/
-/* css entrenamientos.html comienzo*/
-main h2.tituloseccion,
-main h3 {
-  background: linear-gradient(#FED825, #FFA500);
-  border-radius: 10px;
-  color: black;
+.competicion span {
+  font-size: 20px;
+}
+@media (max-width: 767px) {
+  .competicion span {
+    font-size: 16px;
+  }
 }
 
-.training .tituloseccion {
-  padding-top: 1%;
-  padding-bottom: 1%;
-  margin-bottom: 85px;
-  margin-top: 90px;
-}
-.training .row article h3 {
-  border: none;
-  padding: 5px;
-}
-.training .row article img {
-  max-width: 100%;
-  height: 450px;
-  margin-top: 55px;
-  margin-bottom: 55px;
-}
-
-/* css entrenamientos.html fin*/
-/* css entrenamientos.html comienzo*/
+/*kettlebells.html fin*/
+/* entrenamientos.html comienzo */
 main h2.tituloseccion,
 main h3 {
   background: linear-gradient(#FED825, #FFA500);
@@ -285,7 +267,6 @@ main h3 {
 .training {
   margin-top: 80px;
 }
-
 .training .tituloseccion {
   padding: 10px;
   margin-bottom: 85px;
@@ -305,7 +286,7 @@ main h3 {
   border-radius: 5px;
 }
 
-/* css entrenamientos.html fin*/
+/*entrenamientos.html fin*/
 /*contacto.html comienzo*/
 body {
   font-family: "Montserrat", sans-serif;
@@ -481,9 +462,6 @@ body {
 }
 
 /*fin barra de navegación*/
-/*navbar {
-  z-index: 10000000000 !important;
-}*/
 
 
 /*# sourceMappingURL=style.css.map */

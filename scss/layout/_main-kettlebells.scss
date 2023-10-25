@@ -1,4 +1,4 @@
-/* CSS kettlebells.html comienzo */
+/* kettlebells.html comienzo*/
 
 @mixin center {
   display: flex;
@@ -42,51 +42,12 @@
     margin-top: 40px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
-}
-/* css kettlebells.html fin*/
 
-
-/* css entrenamientos.html comienzo*/
-@mixin responsive-image {
-  max-width: 100%;
-  height: 450px;
-  margin-top: 55px;
-  margin-bottom: 55px;
-}
-
-@mixin gradient-text {
-  background: linear-gradient($color-amarilloking, #FFA500);
-  border-radius: 10px;
-  color: $color-noche;
-}
-
-main {
-
-  h2.tituloseccion,
-  h3 {
-    @include gradient-text;
-  }
-}
-
-.training {
-  .tituloseccion {
-    padding-top: 1%;
-    padding-bottom: 1%;
-    margin-bottom: 85px;
-    margin-top: 90px;
-  }
-
-  .row {
-    article {
-      h3 {
-        border: none;
-        padding: 5px;
-      }
-
-      img {
-        @include responsive-image;
-      }
+    span {
+      @include responsive-text;
     }
   }
-}
-/* css entrenamientos.html fin*/
+
+/*kettlebells.html fin*/
+
+
